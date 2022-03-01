@@ -1,0 +1,25 @@
+<h4>Register component</h4>
+
+<p class="alert alert-info" *ngIf="message !='' ">{{message}}</p>
+
+<label>Enter email</label> 
+<input type="text" #email class="form-control">
+
+<label>Enter password</label> 
+<input type="password" #password class="form-control"> 
+
+<label>Enter firstname</label> 
+<input type="text" #firstname class="form-control">
+
+<label>Enter lastname</label> 
+<input type="text" #lastname class="form-control">
+
+<label>Enter city</label>
+<input type="text" #city class="form-control">
+
+<label>Enter phone</label> 
+<input type="text" #phone class="form-control">
+
+<button  class="btn btn-primary">Sign up</button>
+
+Already a User? <button routerLink="./login">login here</button>

@@ -1,0 +1,21 @@
+<h6>Course List</h6>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>PRICE</th>
+            <th>CATEGORY</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let c of courses">
+            <td>{{c.cid}}</td>
+            <td>{{c.cname}}</td>
+            <td>{{c.cprice}}</td>
+            <td>{{c.ccategory}}</td>
+        </tr>
+    </tbody>
+</table>

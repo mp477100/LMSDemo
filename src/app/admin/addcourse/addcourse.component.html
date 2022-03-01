@@ -1,0 +1,22 @@
+<div>
+    <p>Add Course</p>
+
+    <p *ngIf="message !='' ">{{message}}</p>
+
+    <form #myform="ngForm" (ngSubmit)="addCourse(myform.value)">
+
+        <label>Enter course name</label>
+        <input type="text" name="cname" #cname="ngModel" ngModel class="form-control" required minlength="3" maxlength="50">
+
+        <label>Enter course fees</label>
+        <input type="text" name="cfees" #cname="ngModel" ngModel class="form-control" required minlength="3" maxlength="50">
+
+        
+        <label>Enter course category</label>
+        <input type="text" name="ccategory" #cname="ngModel" ngModel class="form-control" required>
+
+        <button [disabled]="!myform.valid" class="btn btn-secondry">Add Course</button>
+
+    </form>
+
+</div>
